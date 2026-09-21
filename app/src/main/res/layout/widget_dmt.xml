@@ -19,7 +19,7 @@
         android:layout_height="match_parent"
         android:gravity="center_vertical"
         android:orientation="horizontal"
-        android:paddingTop="6px">
+        android:paddingTop="2dp">
 
         <!-- Title & Subtitle container -->
         <LinearLayout
