@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/widget_bg"
+    android:orientation="vertical"
+    android:padding="12px"
+    android:clickable="true">
+
+    <!-- Accent progress hairline -->
+    <View
+        android:id="@+id/widget_progress"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#E8A33D" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="6px">
+
+        <!-- Title & Subtitle container -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingRight="8px">
+
+            <TextView
+                android:id="@+id/widget_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="dmt_"
+                android:textColor="#DFE4E5"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:fontFamily="monospace"
+                android:maxLines="1"
+                android:ellipsize="end" />
+
+            <TextView
+                android:id="@+id/widget_subtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="select track..."
+                android:textColor="#767D80"
+                android:textSize="11sp"
+                android:fontFamily="monospace"
+                android:maxLines="1"
+                android:ellipsize="end" />
+        </LinearLayout>
+
+        <!-- Play/Pause TuiKey Button -->
+        <FrameLayout
+            android:id="@+id/widget_btn_play"
+            android:layout_width="38dp"
+            android:layout_height="28dp"
+            android:background="@drawable/widget_key_bg"
+            android:clickable="true"
+            android:focusable="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="|>"
+                android:textColor="#C6CBCC"
+                android:textSize="12sp"
+                android:fontFamily="monospace"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+        <!-- Next TuiKey Button -->
+        <FrameLayout
+            android:id="@+id/widget_btn_next"
+            android:layout_width="44dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="6dp"
+            android:background="@drawable/widget_key_bg"
+            android:clickable="true"
+            android:focusable="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text=">>|"
+                android:textColor="#C6CBCC"
+                android:textSize="12sp"
+                android:fontFamily="monospace"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
