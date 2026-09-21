@@ -35,13 +35,13 @@ base {
 android {
     namespace = "dev.jyotiraditya.dmt"
     compileSdk {
-        version = release(34)
+        version = release(37)
     }
 
     defaultConfig {
         applicationId = "dev.jyotiraditya.dmt"
         minSdk = 30
-        targetSdk = 34
+        targetSdk = 37
         versionCode = appVersionCode
         versionName = appVersionName
     }
